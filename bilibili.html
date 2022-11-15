@@ -33,11 +33,19 @@
                 background-position: center;
             }
             .headdh{
-                height: 64px;
-                font-size: 16px; font-weight: bold;
+                height: 64px; width: 45px;
+                font-size: 14px; font-weight: bold;
             }
             .headxx{
                 height: 64px; margin-left: 20px; justify-content: center;
+            }
+            .midleft{
+                height: 46px; width: 46px; border-radius: 50%;
+            }
+            .channel{
+                height: 34px; width:8%;
+                justify-content: center; align-items: center;
+                background-color: rgb(233, 233, 233);
             }
             .baise{
                 background-color: white;
@@ -48,104 +56,171 @@
     <body>
         <!-- 头部 -->
         <div class="headbg" style=" height: 180px; display: flex;">
-            <div class="flexrow" style="height: 64px; width: 100%; align-items: center;">
-                <!-- 左侧导航栏 -->
-                <div class="flexrow" style="margin-left: 20px;">
-                    <div class="flex" style="height: 64px; flex:1.2">
-                        <a href="https://www.bilibili.com/">
-                            <img src="https://static.hdslb.com/images/favicon.ico" style="height: 16.2px;">
-                        </a>
-                    </div>
-                    <div class="flex headdh" style="margin-left:2px;">
-                        <a href="https://www.bilibili.com/" style="color: white;">首页</a>
-                    </div>
-                    <div class="flex headdh" style="margin-left: 20px;">
-                        <a href="https://live.bilibili.com/" style="color: white;">直播</a>
-                    </div>
-                    <div class="flex headdh" style="margin-left: 20px;">
-                        <a href="https://game.bilibili.com/" style="color: white;">游戏中心</a>
-                    </div>
-                    <div class="flex headdh" style="margin-left: 20px;">
-                        <a href="https://show.bilibili.com/" style="color: white;">会员购</a>
-                    </div>
-                    <div class="flex headdh" style="margin-left: 20px;">
-                        <a href="https://manga.bilibili.com/" style="color: white;">漫画</a>
-                    </div>
-                    <div class="flex headdh" style="margin-left: 20px;">
-                        <a href="https://www.bilibili.com/match/home/" style="color: white;">赛事</a>
-                    </div>
-                    <div class="flex headdh" style="margin-left: 20px;">
-                        <a href="https://live.bilibili.com/activity/live-activity-full/full-next/index.html?is_live_full_webview=1&app_name=bls_winter_2022&is_live_webview=1#/small" style="color: white;">BLS</a>
-                    </div>
-                    <div class="flex headdh" style="margin-left:20px;">
-                        <a href="https://www.bilibili.com/download/">
-                            <img src="https://s1.ax1x.com/2022/11/15/zA7iRA.png" style="height: 16.2px;">
-                        </a>
-                    </div>
-                    <div class="flex headdh" style="margin-left: 2px;">
-                        <a href="https://www.bilibili.com/download/" style="color: white;">下载客户端</a>
-                    </div>
-                </div>
-                <!-- 中间搜索栏 -->
-                <div class="flexcolumn " style="height: 64px; justify-content: center;flex:1.5">
-                    <div class="flex baise" style="height: 40px; width:80%; border-radius: 0%; border: 1px solid black;">
-                        <input type="text" style="height: 20px; width:93%; border: 0px solid black; border-radius: 1%; margin-left:2px;">
-                        <img src="https://s1.ax1x.com/2022/11/14/zATtCd.png" style="height: 60%;">
-                    </div>
-                </div>
-                <!-- 右侧信息栏 -->
-                <div class="flexrow" style="height: 64px;  flex:1">
-                    <div class="flexrow" style="height:64px;">
-                        <div class="flex" style="height:50px;">
-                            <a href="https://space.bilibili.com/1519776001">
-                            <img src="https://s1.ax1x.com/2022/11/11/zCjBqK.png" style="height: 40.8px; border-radius: 50%; border: 2px solid white;">
+            <div style="width:98%; display: flex; margin-left: 1%;">
+                <div class="flexrow" style="height: 64px; width: 100%; align-items: center;">
+                    <!-- 左侧导航栏 -->
+                    <div class="flex" style="flex:1; height: 64px; justify-content: flex-end; ">
+                        <div class="flex" style="height: 64px; margin-left: 20px;">
+                            <a href="https://www.bilibili.com/">
+                                <img src="https://static.hdslb.com/images/favicon.ico" style="height: 16.2px;">
                             </a>
                         </div>
-                        <div class="flexcolumn headxx" style="width: 54px;">
-                            <a href="https://account.bilibili.com/account/big">
-                                <div class="flex  " style="flex:2; justify-content: center;"><img src="https://s1.ax1x.com/2022/11/14/zATN8A.png" style="height: 20px;"></div>
-                                <div class="flex" style="flex:1;"><span style="color: white; font-size: 14px;">大会员</span></div>
+                        <div class="flex headdh" style="margin-left:2px;">
+                            <a href="https://www.bilibili.com/" style="color: white;">首页</a>
+                        </div>
+                        <div class="flex headdh" style="">
+                            <a href="https://live.bilibili.com/" style="color: white;">番剧</a>
+                        </div>
+                        <div class="flex headdh" style="">
+                            <a href="https://live.bilibili.com/" style="color: white;">直播</a>
+                        </div>
+                        <div class="flex headdh" style="width: 70px;">
+                            <a href="https://game.bilibili.com/" style="color: white; width: 160px;">游戏中心</a>
+                        </div>
+                        <div class="flex headdh" style="width: 55px;">
+                            <a href="https://show.bilibili.com/" style="color: white;">会员购</a>
+                        </div>
+                        <div class="flex headdh" style="">
+                            <a href="https://manga.bilibili.com/" style="color: white;">漫画</a>
+                        </div>
+                        <div class="flex headdh" style="">
+                            <a href="https://www.bilibili.com/match/home/" style="color: white;">赛事</a>
+                        </div>
+                        <div class="flex headdh" style="">
+                            <a href="https://live.bilibili.com/activity/live-activity-full/full-next/index.html?is_live_full_webview=1&app_name=bls_winter_2022&is_live_webview=1#/small" style="color: white;">BLS</a>
+                        </div>
+                        <div class="flex" style="">
+                            <a href="https://www.bilibili.com/download/">
+                                <img src="https://s1.ax1x.com/2022/11/15/zA7iRA.png" style="height: 16.2px;">
                             </a>
                         </div>
-                        <div class="flexcolumn headxx" style="width: 34px;">
-                            <a href="https://message.bilibili.com/">
-                                <div class="flex" style="flex:2; justify-content: center;"><img src="https://s1.ax1x.com/2022/11/14/zATwKP.png" style="height: 20px;"></div>
-                                <div class="flex" style="flex:1;"><span style="color: white; font-size: 14px;">信息</span></div>
-                            </a>
+                        <div class="flex headdh" style="margin-left: 2px; width: 90px;">
+                            <a href="https://www.bilibili.com/download/" style="color: white;">下载客户端</a>
                         </div>
-                        <div class="flexcolumn headxx" style="width: 34px;">
-                            <a href="https://t.bilibili.com/">
-                                <div class="flex" style="flex:2; justify-content: center;"><img src="https://s1.ax1x.com/2022/11/14/zATy5Q.png" style="height: 20px;"></div>
-                                <div class="flex" style="flex:1;"><span style="color: white; font-size: 14px;">动态</span></div>
-                            </a>
+                    </div>
+                    <!-- 中间搜索栏 -->
+                    <div class="flex " style="height: 64px; flex:1.5;">
+                        <div class="flex baise" style="height: 40px; width:80%; border-radius: 0%; border: 1px solid black; margin-left: 10%;">
+                            <input type="text" style="height: 20px; width:90%; border: 0px solid black; border-radius: 1%; margin-left:20px;">
+                            <img src="https://s1.ax1x.com/2022/11/14/zATtCd.png" style="height: 60%;">
                         </div>
-                        <div class="flexcolumn headxx" style="width: 34px;">
-                            <a href="https://www.bilibili.com/account/history">
-                                <div class="flex" style="flex:2; justify-content: center;"><img src="https://s1.ax1x.com/2022/11/14/zATcCj.png" style="height: 20px;"></div>
-                                <div class="flex" style="flex:1;"><span style="color: white; font-size: 14px;">历史</span></div>
-                            </a>
-                        </div>
-                        <div class="flexcolumn headxx" style="width: 74px;">
-                            <a href="https://member.bilibili.com/platform/home">
-                                <div class="flex" style="flex:2; justify-content: center;"><img src="https://s1.ax1x.com/2022/11/14/zATg8s.png" style="height: 20px;"></div>
-                                <div class="flex" style="flex:1;"><span style="color: white; font-size: 14px;">创作中心</span></div>
-                            </a>
-                        </div>
-                        <div class="flexcolumn headxx">
-                            <a href="https://member.bilibili.com/platform/upload/video/frame">
-                                <div class="flex" style="height:45px; width: 90px; background-color:rgb(247, 8, 147); border-radius: 6px; justify-content: center;">
-                                    <div class="flex" style="justify-content: center;">
-                                        <img src="https://s1.ax1x.com/2022/11/14/zAThrV.png" style="height: 20px;"><span style="color: white;">投稿</span>
+                    </div>
+                    <!-- 右侧信息栏 -->
+                    <div class="flexrow" style="height: 64px;  flex:1;">
+                        <div class="flexrow" style="height:64px;">
+                            <div class="flex" style="height:50px;">
+                                <a href="https://space.bilibili.com/1519776001">
+                                <img src="https://s1.ax1x.com/2022/11/11/zCjBqK.png" style="height: 40.8px; border-radius: 50%; border: 2px solid white;">
+                                </a>
+                            </div>
+                            <div class="flexcolumn headxx" style="width: 54px;">
+                                <a href="https://account.bilibili.com/account/big">
+                                    <div class="flex  " style="flex:2; justify-content: center;"><img src="https://s1.ax1x.com/2022/11/14/zATN8A.png" style="height: 20px;"></div>
+                                    <div class="flex" style="flex:1;"><span style="color: white; font-size: 14px;">大会员</span></div>
+                                </a>
+                            </div>
+                            <div class="flexcolumn headxx" style="width: 34px;">
+                                <a href="https://message.bilibili.com/">
+                                    <div class="flex" style="flex:2; justify-content: center;"><img src="https://s1.ax1x.com/2022/11/14/zATwKP.png" style="height: 20px;"></div>
+                                    <div class="flex" style="flex:1;"><span style="color: white; font-size: 14px;">信息</span></div>
+                                </a>
+                            </div>
+                            <div class="flexcolumn headxx" style="width: 34px;">
+                                <a href="https://t.bilibili.com/">
+                                    <div class="flex" style="flex:2; justify-content: center;"><img src="https://s1.ax1x.com/2022/11/14/zATy5Q.png" style="height: 20px;"></div>
+                                    <div class="flex" style="flex:1;"><span style="color: white; font-size: 14px;">动态</span></div>
+                                </a>
+                            </div>
+                            <div class="flexcolumn headxx" style="width: 34px;">
+                                <a href="https://www.bilibili.com/account/history">
+                                    <div class="flex" style="flex:2; justify-content: center;"><img src="https://s1.ax1x.com/2022/11/14/zATcCj.png" style="height: 20px;"></div>
+                                    <div class="flex" style="flex:1;"><span style="color: white; font-size: 14px;">历史</span></div>
+                                </a>
+                            </div>
+                            <div class="flexcolumn headxx" style="width: 74px;">
+                                <a href="https://member.bilibili.com/platform/home">
+                                    <div class="flex" style="flex:2; justify-content: center;"><img src="https://s1.ax1x.com/2022/11/14/zATg8s.png" style="height: 20px;"></div>
+                                    <div class="flex" style="flex:1;"><span style="color: white; font-size: 14px;">创作中心</span></div>
+                                </a>
+                            </div>
+                            <div class="flexcolumn headxx">
+                                <a href="https://member.bilibili.com/platform/upload/video/frame">
+                                    <div class="flex" style="height:45px; width: 90px; background-color:rgb(247, 8, 147); border-radius: 6px; justify-content: center;">
+                                        <div class="flex" style="justify-content: center;">
+                                            <img src="https://s1.ax1x.com/2022/11/14/zAThrV.png" style="height: 20px;"><span style="color: white;">投稿</span>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- 中部 -->
-        <div></div>
+        <div style="height: 120px; width:90%; display: flex; margin-left: 5%; ">
+            <!-- 左侧 -->
+            <div class="flex" style="flex:1; height: 120px; justify-content: flex-end; ">
+                <div class="flex">
+                    <a href="https://t.bilibili.com/">
+                        <div class="flex midleft" style="flex:2; justify-content: center; background-color: rgb(255, 115, 0)"><img src="https://s1.ax1x.com/2022/11/14/zATy5Q.png" style="height: 30px;"></div>
+                        <div class="flex" style="flex:1; justify-content: center;"><span style="color: black; font-size: 16px;">动态</span></div>
+                    </a>
+                </div>
+                <div class="flex" style="margin-left: 20px;">
+                    <a href="https://t.bilibili.com/">
+                        <div class="flex midleft" style="flex:2; justify-content: center; background-color:rgb(248, 23, 117)"><img src="https://s1.ax1x.com/2022/11/15/zEFToQ.png" style="height: 30px;"></div>
+                        <div class="flex" style="flex:1; justify-content: center;"><span style="color: black; font-size: 16px;">动态</span></div>
+                    </a>
+                </div>
+                <div class="flex" style="margin-left: 20px; margin-right: 50px;">
+                    <a href="https://t.bilibili.com/">
+                        <div class="flex midleft" style="flex:2; justify-content: center; background-color:rgb(62, 189, 62)"><img src="https://s1.ax1x.com/2022/11/15/zEkkS1.png" style="height: 30px;"></div>
+                        <div class="flex" style="flex:1; justify-content: center;"><span style="color: black; font-size: 16px;">频道</span></div>
+                    </a>
+                </div>
+            </div>
+            <!-- 中间 -->
+            <div class="flex" style="flex:3.5">
+                <div style=" display: flex;height: 74px; flex-wrap: wrap; width: 95%;">
+                    <div class="flexcolumn channel"><p>番 剧</p></div>
+                    <div class="flexcolumn channel"><p>国 创</p></div>
+                    <div class="flexcolumn channel"><p>综 艺</p></div>
+                    <div class="flexcolumn channel"><p>动 画</p></div>
+                    <div class="flexcolumn channel"><p>鬼 畜</p></div>
+                    <div class="flexcolumn channel"><p>舞 蹈</p></div>
+                    <div class="flexcolumn channel"><p>娱 乐</p></div>
+                    <div class="flexcolumn channel"><p>科 技</p></div>
+                    <div class="flexcolumn channel"><p>美 食</p></div>
+                    <div class="flexcolumn channel"><p>汽 车</p></div>
+                    <div class="flexcolumn channel"><p>运 动</p></div>
+                    <div class="flexcolumn channel"><p>VLOG</p></div>
+                    <div class="flexcolumn channel"><p>电 影</p></div>
+                    <div class="flexcolumn channel"><p>电 视 剧</p></div>
+                    <div class="flexcolumn channel"><p>纪 录 片</p></div>
+                    <div class="flexcolumn channel"><p>游 戏</p></div>
+                    <div class="flexcolumn channel"><p>音 乐</p></div>
+                    <div class="flexcolumn channel"><p>影 视</p></div>
+                    <div class="flexcolumn channel"><p>知 识</p></div>
+                    <div class="flexcolumn channel"><p>咨 询</p></div>
+                    <div class="flexcolumn channel"><p>生 活</p></div>
+                    <div class="flexcolumn channel"><p>时 尚</p></div>
+                    <div class="flexcolumn channel"><p>动 物圈 </p></div>
+                    <div class="flexcolumn channel"><p>更 多↓</p></div>
+                </div>
+            </div>
+            <!-- 右侧 -->
+            <div class="flex" style="flex:1;">
+                <div style=" display: flex;height: 74px; flex-wrap: wrap; border-left: 1px solid gray; align-items: center;">
+                        <div class="flexcolumn " style="width: 25%;"><p>专栏</p></div>
+                        <div class="flexcolumn " style="width: 25%; margin-left: 6.7%;"><p>活动</p></div>
+                        <div class="flexcolumn " style="width: 30%; margin-left: 6.7%;"><p>社区中心</p></div>
+                        <div class="flexcolumn" style="width: 25%; "> <p>直播</p></div>
+                        <div class="flexcolumn" style="width: 25%; margin-left: 6.7%;"><p>课堂</p></div>
+                        <div class="flexcolumn" style="width: 30%; margin-left: 6.7%;"><p>热歌新榜</p></div>
+                    </div>
+            </div>
+        </div>
         <!-- 主体 -->
         <div></div>
     </body>
