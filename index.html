@@ -1,60 +1,62 @@
 <html>
   <head>
+    <!-- 为移动设备添加 viewport -->
+    <meta name ="viewport" content ="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
     <title>🐱DefensiveSniper的个人主页</title>
-    <link rel="Shortcut Icon" href="./logo.ico" type="image/x-icon" />
+    <link rel="Shortcut Icon" href="https://s1.ax1x.com/2022/11/11/zCjBqK.png" type="image/x-icon" />
 
     <style>
-      a{
+      *{
         text-decoration: none;
       }
+      .bgvideo{
+                position: fixed;
+                left:0px;
+                bottom: 0px;
+                height: auto; width: auto\9; width:100%;
+                opacity: 0.7;
+                transform:rotateY(180deg);
+                z-index: -1;
+      }
+      @media (max-width: 800px) {
+          .bgvideo{
+                    position: fixed;
+                    left:-5%;
+                    top: 0px;
+                    width: auto; height: stretch; height:100%;
+                    z-index: 0;
+                    transform:rotateY(180deg);
+                    opacity:"0.7"
+          }
+        }
       </style>
   </head>
   
   <body>
-  <video id="video" src="after-background.mp4" autoplay loop muted 
-          style="position: fixed;  
-                  right: 0px;  
-                  bottom: 0px;  
-                  min-width: 100%;  
-                  min-height: 100%;  
-                  height: auto;  
-                  width: auto; 
-                  z-index: 0;
-                  opacity:0.9/*透明度*/">
-  </video>
-  
-  <div style="position: absolute;
-              font-size: 40px;
-              font-weight: bold;
-              left: 00%;
-              top:40%;
-              width: 800px;
-              height: max-content;">
-    <a href="https://defensivesniper.github.io/bilibili/main.html" >
-      <img src="https://s1.ax1x.com/2022/11/11/zCjBqK.png" 
-      style="width: 150px;
-              height: 150px;
-              border-radius: 50%;       /*大于等于50则为圆*/
-              background-color:white;
-              position: absolute;
-              margin-top: 45px;
-              margin-left: 200px;
-              border:0 solid;       /*border:0用来消除图片蓝框*/
-              opacity: 0.8;">
-    </a>
-  </div>
-  <div style=" width:max-content;
-              height:max-content;
-              left:145px;
-              top:550px;
-              position:absolute;
-              font-weight: 1000;
-              font-size:40px;">
-    <a href="https://defensivesniper.github.io/bilibili/main.html" >
-      <p style="color: rgb(228, 6, 161);
-                opacity: 0.7;">🐱进入主页🐱</p>
-    </a>
+    <video class="bgvideo" src="front-back.mp4" autoplay loop muted ></video>
+    <div style="display: flex; width: 90%; height: 90%; align-items: center; margin-top: 5%; margin-left: 5%;">
+      <div style="width: 30%; height: 70%; margin-left: 50%; display: flexcolumn; border: 6px dashed rgb(255, 192, 227)">
+        <div style="display:flex; height: 20%; justify-content: center; border-bottom: 4px dashed pink;"><!--头像-->
+          <div>
+          <a href="https://defensivesniper.github.io/bilibili/main.html" target="_blank">
+            <img src="https://s1.ax1x.com/2022/11/11/zCjBqK.png" style="border-radius: 50%; height: 100%; border: 2px solid white;">
+          </a>
+          </div>
+        </div>
+        <div style="display:flex; height: 80%; justify-content: center;"><!--名字-->
+          <div>
+            <h1 style="color: rgb(250, 158, 173); font-size: 45px; font-family: 'Microsoft YaHei'; font-weight: bold;">DefensiveSniper</h1>
+            <hr>
+            <h1 style="color: rgb(250, 158, 173); font-size: 30px; font-family: 'Microsoft YaHei';">🐱bilibili不知名UP</h2>
+            <hr>
+            <h1 style="color: rgb(250, 158, 173); font-size: 30px; font-family: 'Microsoft YaHei';">🐱封校苦命大学牲</h2>
+            <hr>
+            <h1 style="color: rgb(250, 158, 173); font-size: 30px; font-family: 'Microsoft YaHei';">🐱QQ: 暂时还没有</h2>
+            <hr>
+            <h1 style="color: rgb(250, 158, 173); font-size: 20px; font-family: 'Microsoft YaHei';">🐱🐱🐱🐱头像可以点^ ^🐱🐱🐱🐱</h2>
+            <hr>
+          </div>
+      </div>
     </div>
-  
-  </body>
+  </body> 
 </html>
