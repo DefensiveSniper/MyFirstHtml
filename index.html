@@ -18,15 +18,18 @@
                 transform:rotateY(180deg);
                 z-index: -1;
       }
+      .ziti{
+        color: rgb(250, 158, 173); font-size: 30px; font-family: 'Microsoft YaHei';
+      }
       @media (max-width: 800px) {
           .bgvideo{
                     position: fixed;
                     left:-5%;
                     top: 0px;
                     width: auto; height: stretch; height:100%;
-                    z-index: 0;
+                    z-index: -1;
                     transform:rotateY(180deg);
-                    opacity:"0.7"
+                    opacity:0.7;
           }
         }
       </style>
@@ -35,25 +38,26 @@
   <body>
     <video class="bgvideo" src="front-back.mp4" autoplay loop muted ></video>
     <div style="display: flex; width: 90%; height: 90%; align-items: center; margin-top: 5%; margin-left: 5%;">
-      <div style="width: 30%; height: 70%; margin-left: 50%; display: flexcolumn; border: 6px dashed rgb(255, 192, 227)">
-        <div style="display:flex; height: 20%; justify-content: center; border-bottom: 4px dashed pink;"><!--头像-->
+      <div style="width: 30%; height: 70%; margin-left: 50%; display: flexcolumn;">
+        <div style="display:flex; height: 20%; justify-content: center;"><!--头像-->
           <div>
           <a href="https://defensivesniper.github.io/bilibili/main.html" target="_blank">
-            <img src="https://s1.ax1x.com/2022/11/11/zCjBqK.png" style="border-radius: 50%; height: 100%; border: 2px solid white;">
+            <img src="https://s1.ax1x.com/2022/11/11/zCjBqK.png" style="border-radius: 50%; height: 100%; border: 2px solid white; opacity: 0.8;">
           </a>
           </div>
         </div>
+        <hr>
         <div style="display:flex; height: 80%; justify-content: center;"><!--名字-->
           <div>
-            <h1 style="color: rgb(250, 158, 173); font-size: 45px; font-family: 'Microsoft YaHei'; font-weight: bold;">DefensiveSniper</h1>
+            <h1 class="ziti" style="font-size: 45px;">DefensiveSniper</h1>
             <hr>
-            <h1 style="color: rgb(250, 158, 173); font-size: 30px; font-family: 'Microsoft YaHei';">🐱bilibili不知名UP</h2>
+            <h1 class="ziti">🐱bilibili不知名UP</h2>
             <hr>
-            <h1 style="color: rgb(250, 158, 173); font-size: 30px; font-family: 'Microsoft YaHei';">🐱封校苦命大学牲</h2>
+            <h1 class="ziti">🐱封校苦命大学牲</h2>
             <hr>
-            <h1 style="color: rgb(250, 158, 173); font-size: 30px; font-family: 'Microsoft YaHei';">🐱QQ: 暂时还没有</h2>
+            <h1 class="ziti">🐱QQ: 暂时还没有</h2>
             <hr>
-            <h1 style="color: rgb(250, 158, 173); font-size: 20px; font-family: 'Microsoft YaHei';">🐱🐱🐱🐱头像可以点^ ^🐱🐱🐱🐱</h2>
+            <h1 class="ziti">🐱头像可以点^ ^</h2>
             <hr>
           </div>
       </div>
