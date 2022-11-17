@@ -31,13 +31,21 @@
                     opacity:0.7;
           }
         }
-      </style>
+      @media (max-width: 800px) {
+        .ziti{
+                  font-size: 20px;
+        }
+        .mainMargin{
+                  margin-left: 10%;
+        }
+      }
+    </style>
   </head>
   
   <body>
     <video class="bgvideo" src="front-back.mp4" autoplay loop muted ></video>
     <div style="display: flex; width: 90%; height: 90%; align-items: center; margin-top: 5%; margin-left: 5%;">
-      <div style="width: 30%; height: 70%; display: flexcolumn;">
+      <div class="mainMargin" style="width: 30%; height: 70%; display: flexcolumn;">
         <div style="display:flex; height: 20%; justify-content: center;"><!--头像-->
           <div>
           <a href="https://defensivesniper.github.io/bilibili/main.html" target="_blank">
